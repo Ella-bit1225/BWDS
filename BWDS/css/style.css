@@ -13,6 +13,31 @@ header{
     z-index: 9999;
 }
 
+.Logo{
+    position: relative;
+    width: 150px;
+    height: 80px;
+}
+
+.Logo img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .3s;
+}
+
+.logo-hover{
+    opacity: 0;
+}
+
+.Logo:hover .logo-normal{
+    opacity: 0;
+}
+
+.Logo:hover .logo-hover{
+    opacity: 1;
+}
+
 .header-left,
 .header-right{
     width: 200px;
@@ -45,11 +70,38 @@ nav ul li{
 }
 
 nav ul li a{
-    text-decoration: none;
+    position: relative;
+    display: block;
+
+    width: 120px;
+    height: 25px;
+
+    overflow: hidden;
+
     color: white;
-    font-size: 18px;
-    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+}
+
+.zh,
+.en{
+    display: block;
     transition: .3s;
+}
+
+.en{
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 100%;
+}
+
+nav ul li a:hover .zh{
+    transform: translateY(-25px);
+}
+
+nav ul li a:hover .en{
+    transform: translateY(-25px);
 }
 
 nav ul li a:hover{
@@ -103,10 +155,72 @@ nav ul li a:hover{
 }
 
 .about{
-    text-align: center;
     padding: 150px 0;
-    line-height: 3;
-    color: #7a7a7a;
+    text-align: center;
+}
+
+.about-content{
+    color:#7a7a7a;
+    font-size:18px;
+    line-height:2;
+    letter-spacing:8px;
+}
+
+.about-content p{
+    margin:10px 0;
+}
+
+.about-title{
+    position:relative;
+    text-align:center;
+    margin-top:20px;
+}
+
+.about-title span{
+    display:block;
+    color:#b88a57;
+    font-size:18px;
+    letter-spacing:8px;
+    margin-bottom:15px;
+}
+
+.about-title::before{
+    content:"";
+
+    width:160px;
+    height:1px;
+
+    background:#b88a57;
+
+    margin-right:20px;
+}
+
+.about-title::after{
+    content:"";
+    display:block;
+
+    width:180px;
+    height:1px;
+
+    background:#b88a57;
+
+    margin: 5px auto 0;
+}
+
+.about-title span::after{
+    content:"";
+
+    display:inline-block;
+
+    width:15px;
+    height:1px;
+
+    background:#b88a57;
+
+    transform:rotate(45deg);
+
+    margin-left:15px;
+    vertical-align:middle;
 }
 
 .product{
