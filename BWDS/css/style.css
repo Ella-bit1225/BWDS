@@ -1,0 +1,132 @@
+header{
+    height: 140px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    background: #6f7987;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 9999;
+}
+
+.header-left,
+.header-right{
+    width: 200px;
+}
+
+.header-right{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li{
+    margin-left: 0px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    transition: .3s;
+}
+
+nav ul li a:hover{
+    opacity: .7;
+}
+
+.banner{
+    margin-top:140px;
+    position: relative;
+    z-index: 1;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.swiper{
+    position: relative;
+}
+
+.my-prev,
+.my-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 60px;
+    height: auto;
+
+    opacity: .7;
+    cursor: pointer;
+    transition: .3s;
+
+    z-index: 100;
+}
+
+.my-prev:hover,
+.my-next:hover{
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.my-prev{
+    left: 30px;
+}
+
+.my-next{
+    right: 30px;
+}
+
+.about{
+    text-align: center;
+    padding: 150px 0;
+    line-height: 3;
+    color: #7a7a7a;
+}
+
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 100px 0;
+}
+
+body{
+    margin: 0;
+    background-color: #d7dbe1;
+    font-family: "Microsoft JhengHei";
+}
+
+footer{
+    background-color: #6f7987;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
