@@ -65,7 +65,6 @@ nav ul{
     gap: 30px;
     justify-content: center;
     align-items: flex-end;
-    transform: translateY(1px);
 }
 
 nav ul li{
