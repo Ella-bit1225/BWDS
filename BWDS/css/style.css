@@ -42,9 +42,6 @@ header{
 .header-left,
 .header-right{
     width: 150px;
-}
-
-.header-right{
     display: flex;
     justify-content: flex-end;
     gap: 20px;
