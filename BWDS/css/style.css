@@ -17,8 +17,6 @@ header{
     position: relative;
     width: 150px;
     height: 80px;
-
-    transform: translateY(10px);
 }
 
 .Logo img{
