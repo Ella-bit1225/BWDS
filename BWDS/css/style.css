@@ -22,7 +22,7 @@ header{
 .Logo img{
     position: absolute;
     top: 0;
-    left: 150;
+    left: 300;
     transition: .3s;
 }
 
