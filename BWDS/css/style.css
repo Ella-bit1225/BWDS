@@ -15,14 +15,14 @@ header{
 
 .Logo{
     position: relative;
-    width: 300px;
+    width: 150px;
     height: 110px;
 }
 
 .Logo img{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 150;
     transition: .3s;
 }
 
