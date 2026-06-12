@@ -17,6 +17,8 @@ header{
     position: relative;
     width: 150px;
     height: 150px;
+
+    transform: translateY(0px);
 }
 
 .Logo img{
@@ -40,10 +42,14 @@ header{
 
 .header-left,
 .header-right{
+    width: 200px;
+}
+
+.header-right{
     width: 150px;
     display: flex;
     justify-content: flex-end;
-    gap: 30px;
+    gap: 20px;
     margin-top: 40px;
 }
 
@@ -71,7 +77,8 @@ nav ul li a{
     position: relative;
     display: block;
 
-    width: 120px;
+    padding:0 15px;
+    white-space:nowrap;
     height: 25px;
 
     overflow: hidden;
@@ -193,14 +200,227 @@ nav ul li a:hover{
     margin-bottom:15px;
 }
 
+.news{
+    background:#fff;
 
+    padding:100px 0;
+
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+
+    gap:80px;
+
+    position:relative;
+}
+
+.news-label{
+    display:flex;
+    align-items:flex-end;
+    transform:translateY(-60px);
+}
+
+.label-box{
+    width:90px;
+    height:400px;
+
+    background:#fff;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    padding-top:20px;
+
+    position:relative;
+
+    z-index:2;
+}
+
+.label-box img{
+    width:45px;
+    margin-bottom:25px;
+}
+
+.label-text{
+    writing-mode:vertical-rl;
+
+    font-size:42px;
+
+    color:#4f5968;
+
+    letter-spacing:8px;
+
+    font-weight:bold;
+}
+
+.label-en{
+    writing-mode:vertical-rl;
+
+    color:#808080;
+
+    letter-spacing:8px;
+
+    margin-left:10px;
+
+    font-size:20px;
+}
+
+.news-content{
+    width:900px;
+}
+
+.news-item{
+    display:flex;
+
+    gap:35px;
+
+    padding:25px 0;
+
+    border-bottom:1px solid #ddd;
+}
+
+.news-item img{
+    width:240px;
+    height:140px;
+
+    object-fit:cover;
+
+    border-radius:4px;
+}
+
+.news-text{
+    flex:1;
+}
+
+.news-text h3{
+    margin-top:0;
+
+    color:#5f6774;
+
+    font-size:24px;
+
+    font-weight:600;
+}
+
+.news-text p{
+    color:#8a8a8a;
+
+    line-height:2;
+
+    font-size:18px;
+}
+
+.more-btn{
+    display:block;
+
+    width:160px;
+
+    margin:40px auto 0;
+
+    border:1px solid #bdbdbd;
+
+    text-align:center;
+
+    padding:12px 0;
+
+    color:#666;
+
+    text-decoration:none;
+
+    letter-spacing:4px;
+
+    transition:.3s;
+}
+
+.more-btn:hover{
+    background:#6f7987;
+    color:#fff;
+}
 
 .product{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
-    padding: 100px 0;
+    position:relative;
+    padding:120px 0;
+    overflow:hidden;
+}
+
+.product-content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+}
+
+.center-area{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.cookie{
+    width:180px;
+}
+
+.donut{
+    width:450px;
+}
+
+.tart{
+    width:220px;
+}
+
+.whale-left{
+    position:absolute;
+
+    left:-80px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:220px;
+
+    opacity:.7;
+}
+
+.whale-right{
+    position:absolute;
+
+    right:-80px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:220px;
+
+    opacity:.7;
+}
+
+.more-btn{
+    display:block;
+
+    margin:40px auto 0;
+
+    width:120px;
+    height:36px;
+
+    border:1px solid #7f8792;
+
+    background:transparent;
+
+    color:#7f8792;
+
+    letter-spacing:3px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.more-btn:hover{
+    background:#7f8792;
+    color:white;
 }
 
 .item{
@@ -223,14 +443,126 @@ body{
 }
 
 footer{
-    background-color: #6f7987;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    padding: 40px;
+    padding: 0;
 }
 
+.footer-top{
 
+    background:#6f7987;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    gap:40px;
+
+    padding:40px 60px;
+}
+
+.footer-col{
+
+    color:white;
+
+    min-width:160px;
+
+    position:relative;
+}
+
+.footer-col:not(:last-child)::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-20px;
+    top:0;
+
+    width:1px;
+    height:100%;
+
+    background:rgba(255,255,255,.4);
+}
+
+.footer-col h4{
+
+    writing-mode:vertical-rl;
+
+    letter-spacing:5px;
+
+    float:left;
+
+    margin-right:20px;
+}
+
+.footer-col p{
+
+    margin:6px 0;
+
+    font-size:13px;
+
+    line-height:1.6;
+}
+
+.footer-col a{
+
+    display:block;
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-bottom:8px;
+
+    font-size:13px;
+}
+
+.footer-brand{
+
+    width:260px;
+}
+
+.footer-brand img{
+
+    max-width:100%;
+}
+
+.social{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:10px;
+}
+
+.social img{
+
+    width:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.social img:hover{
+
+    transform:scale(1.2);
+}
+
+.copyright{
+
+    background:white;
+
+    color:#666;
+
+    text-align:center;
+
+    padding:15px 0;
+
+    font-size:12px;
+}
 
 /* 平板 */
 @media screen and (max-width:1024px){
@@ -284,9 +616,59 @@ footer{
         height:300px;
     }
 
+    @media screen and (max-width:768px){
+
+    .news{
+        flex-direction:column;
+        padding:60px 20px;
+        gap:30px;
+    }
+
+    .news-label{
+        transform:none;
+        justify-content:center;
+    }
+
+    .label-box{
+        width:70px;
+        height:260px;
+    }
+
+    .label-text{
+        font-size:28px;
+    }
+
+    .news-content{
+        width:100%;
+    }
+
+    .news-item{
+        flex-direction:column;
+    }
+
+    .news-item img{
+        width:100%;
+        height:auto;
+    }
+}
+
+
     .product{
         flex-direction:column;
         gap:30px;
+    }
+
+    .product-content{
+        flex-direction:column;
+    }
+
+    .whale-left,
+    .whale-right{
+        display:none;
+    }
+
+    .donut{
+        width:80%;
     }
 
     .item{
@@ -300,10 +682,29 @@ footer{
         max-width:300px;
     }
 
-    footer{
+    @media (max-width:768px){
+
+    .footer-top{
+
         flex-direction:column;
-        text-align:center;
-        gap:15px;
+
+        padding:30px;
     }
+
+    .footer-col{
+
+        width:100%;
+    }
+
+    .footer-col::after{
+        display:none;
+    }
+
+    .footer-brand{
+
+        width:100%;
+    }
+
+}
 
 }
