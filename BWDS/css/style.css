@@ -17,7 +17,7 @@ header{
     position: relative;
     width: 150px;
     height: 110px;
-    transform: translateX(150px);
+    margin-left: 150px
 }
 
 .Logo img{
