@@ -314,15 +314,12 @@ nav ul li a:hover{
 }
 
 .more-btn{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
+    display:block;
     width:160px;
-    height:36px;
-
-    margin:40px auto 0;
+    margin:30px auto 0;
     border:1px solid #bdbdbd;
+    text-align:center;
+    padding:12px 0;
     color:#666;
     text-decoration:none;
     letter-spacing:4px;
