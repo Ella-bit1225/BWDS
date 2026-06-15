@@ -11,7 +11,7 @@ header{
     width: 100%;
     box-sizing: border-box;
     z-index: 9999;
-}
+}/*頁首*/
 
 .Logo{
     position: relative;
@@ -19,14 +19,14 @@ header{
     height: 150px;
 
     transform: translateY(20px);
-}
+}/*BWDS Logo*/
 
 .Logo img{
     position: absolute;
     top: 0;
     left: 0;
     transition: .3s;
-}
+}/*BWDS Logo 圖片*/
 
 .logo-hover{
     opacity: 0;
