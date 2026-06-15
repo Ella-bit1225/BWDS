@@ -316,10 +316,10 @@ nav ul li a:hover{
 .more-btn{
     display:block;
     width:160px;
-    margin:20px auto 0;
+    margin:40px auto 0;
     border:1px solid #bdbdbd;
     text-align:center;
-    padding:12px 0;
+    padding:6px 0;
     color:#666;
     text-decoration:none;
     letter-spacing:4px;
