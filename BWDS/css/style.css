@@ -350,6 +350,12 @@ nav ul li a:hover{
     width:450px;
 }
 
+.donut-more{
+    position: absolute;
+    top: 460px;
+    left: 1100px;
+}
+
 .tart{
     width:220px;
 }
@@ -453,22 +459,9 @@ footer{
     position:relative;
 }
 
-.footer-col:not(:last-child)::after{
-
-    content:"";
-
-    position:absolute;
-
-    right:-20px;
-    top:0;
-
-    width:1px;
-    height:100%;
-
-    background:rgba(255,255,255,.4);
-}
-
 .footer-col h4{
+
+    height: 200px;
 
     writing-mode:vertical-rl;
 
@@ -479,9 +472,26 @@ footer{
     margin-right:20px;
 }
 
+.title-container {
+    position: relative;
+    display: inline-block;
+    padding-right: 30px; /* 預留右邊放線的空間 */
+}
+
+.title-container::after {
+    content: "";
+    position: absolute;
+    right: 15px; /* 線條位置微調 */
+    top: 25%;    /* 垂直置中 */
+    transform: translateY(-50%); /* 確保絕對垂直置中 */
+    width: 1px;
+    height: 100px; /* 線條高度 */
+    background: rgba(255, 255, 255, 0.4);
+}
+
 .footer-col p{
 
-    margin:6px 0;
+    margin:0px 0;
 
     font-size:13px;
 
