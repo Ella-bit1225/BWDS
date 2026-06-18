@@ -457,7 +457,7 @@ footer{
 
     color:white;
 
-    min-width:160px;
+    min-width:250px;
 
     position:relative;
 }
@@ -478,17 +478,17 @@ footer{
 .title-container {
     position: relative;
     display: inline-block;
-    padding-right: 30px; /* 預留右邊放線的空間 */
+    padding-right: 30px;
 }
 
 .title-container::after {
     content: "";
     position: absolute;
-    right: 15px; /* 線條位置微調 */
-    top: 25%;    /* 垂直置中 */
-    transform: translateY(-50%); /* 確保絕對垂直置中 */
+    right: 15px; 
+    top: 25%; 
+    transform: translateY(-50%);
     width: 1px;
-    height: 100px; /* 線條高度 */
+    height: 100px;
     background: rgba(255, 255, 255, 0.4);
 }
 
