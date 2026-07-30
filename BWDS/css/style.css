@@ -112,6 +112,65 @@ nav ul li a:hover{
     opacity: .7;
 }
 
+/* 1. 將父層 li 設為相對定位，讓絕對定位的下拉選單能夠以它為基準對齊 */
+nav ul li {
+    position: relative;
+    margin-top: 50px;
+}
+
+/* 2. 下拉選單外觀與定位設定*/
+.drop-down-menu {
+    display: none; /* 預設隱藏 */
+    position: absolute;
+    top: 100%; /* 緊貼在「關於BWDS」下方 */
+    left: 50%;
+    transform: translateX(-50%); /* 置中對齊按鈕 */
+    
+    background-color: #ffffff;
+    min-width: 140px;
+    padding: 10px 0;
+    margin-top: 10px; /* 與導覽列保持一點距離 */
+    
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* 柔和陰影 */
+    border-radius: 12px; /* 圓角效果 */
+    z-index: 1000;
+    list-style: none;
+}
+
+/* 當加上 .show 類別時顯示選單 */
+.drop-down-menu.show {
+    display: block;
+}
+
+/* 3. 下拉選單內的項目樣式 */
+.drop-down-menu li {
+    margin-top: 0; /* 清除原本 nav li 的間距 */
+    width: 100%;
+}
+
+.drop-down-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #000; /* 字體顏色配合整體風格 */
+    font-size: 15px;
+    text-decoration: none;
+    text-align: left;
+    white-space: nowrap;
+    height: auto;
+    overflow: visible;
+}
+
+/* 清除滑動特效影響，並加上 hover 背景色 */
+.drop-down-menu li a:hover {
+    background-color: #f5f5f5;
+    opacity: 1;
+}
+
+.drop-down-menu li a:hover .zh,
+.drop-down-menu li a:hover .en {
+    transform: none;
+}
+
 .banner{
     margin-top:0px;
     position: relative;
@@ -457,7 +516,7 @@ footer{
 
     color:white;
 
-    min-width:250px;
+    min-width:160px;
 
     position:relative;
 }
@@ -478,17 +537,17 @@ footer{
 .title-container {
     position: relative;
     display: inline-block;
-    padding-right: 30px;
+    padding-right: 30px; /* 預留右邊放線的空間 */
 }
 
 .title-container::after {
     content: "";
     position: absolute;
-    right: 15px; 
-    top: 25%; 
-    transform: translateY(-50%);
+    right: 15px; /* 線條位置微調 */
+    top: 25%;    /* 垂直置中 */
+    transform: translateY(-50%); /* 確保絕對垂直置中 */
     width: 1px;
-    height: 100px;
+    height: 100px; /* 線條高度 */
     background: rgba(255, 255, 255, 0.4);
 }
 
