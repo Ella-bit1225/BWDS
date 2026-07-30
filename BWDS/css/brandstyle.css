@@ -1,0 +1,120 @@
+.banner-container {
+  background-color: #e4e8ec; /* 淺灰藍色背景 */
+  padding: 30px 50px;
+  position: relative;
+}
+
+.home{
+    position: absolute;
+    left: 220px;
+}
+.separator{
+    position: absolute;
+    left: 240px;
+    color: #929AA5;
+}
+.page-title{
+    position: absolute;
+    left: 260px;
+    color: #929AA5;
+}
+
+.banner-container {
+  background-color: #e4e8ec; /* 淺灰藍色背景 */
+  padding: 30px 50px;
+  position: relative;
+}
+
+.home{
+    position: absolute;
+    left: 220px;
+}
+.separator{
+    position: absolute;
+    left: 240px;
+    color: #929AA5;
+}
+.page-title{
+    position: absolute;
+    left: 260px;
+    color: #929AA5;
+}
+
+.menu-section {
+    background-color: #e4e8ec; /* 淺灰藍色背景 */
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* 將左側線條固定寬度為 260px，按鈕就會精準停在左側 260px 的位置 */
+.left-line {
+    width: 230px;
+    flex-grow: 0;
+    margin: 60px 0px; /* 取消彈性伸展 */
+}
+
+/* 按鈕群組 */
+.button-group {
+  display: flex;
+  gap: 30px; /* 按鈕間距 */
+  z-index: 2;  /* 確保按鈕在線條上方 */
+}
+
+/* 膠囊按鈕樣式 */
+.nav-btn {
+  background-color: #c4a482; /* 棕色/奶茶色 */
+  color: #ffffff;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 30px; /* 膠囊圓角 */
+  font-size: 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 立體陰影 */
+  transition: all 0.3s ease;
+  margin: 60px 30px 60px 30px;
+}
+
+.nav-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* 貫穿左右的線條 */
+.line {
+  height: 2px;
+  background-color: #bfa181;
+  position: relative;
+}
+
+/* 右側線條維持彈性填滿剩餘空間 */
+.right-line {
+  flex-grow: 1;
+}
+
+/* 線條上的圓點裝飾 */
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #bfa181;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left-line .dot {
+  right: 0; /* 靠右對齊線條末端 */
+}
+
+.right-line .dot {
+  left: 0; /* 靠左對齊線條前端 */
+}
+
+.brandm-image{
+    width: 100%;
+    height: auto;
+}
